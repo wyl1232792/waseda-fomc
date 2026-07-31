@@ -1,0 +1,29 @@
+[project]
+name = "waseda-fomc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "wyl1232792", email = "wyl1232792@hotmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "jupyter>=1.1.1",
+    "linearmodels>=7.0",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.1",
+    "pandas>=3.0.5",
+    "pyarrow>=25.0.0",
+    "pytest>=9.1.1",
+    "scikit-learn>=1.9.0",
+    "scipy>=1.18.0",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.14.6",
+]
+
+[project.scripts]
+waseda-fomc = "waseda_fomc:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
